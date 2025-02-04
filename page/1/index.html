@@ -49,6 +49,14 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <style id="wp-block-columns-inline-css">
 .wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
 </style>
+<style id="wp-block-verse-inline-css">
+pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse){font-family:inherit}
+</style>
+<link rel="stylesheet" id="carousel-block-slick-style-css" href="https://www.revitabiome.com/wp-content/plugins/carousel-block/vendor/slick/slick.min.css" media="">
+<style id="cb-carousel-style-inline-css">
+.wp-block-cb-carousel .slick-slide{overflow:hidden;padding-left:7.5px;padding-right:7.5px}.wp-block-cb-carousel .slick-dots li button:not(:hover):not(:active),.wp-block-cb-carousel .slick-next:not(:hover):not(:active),.wp-block-cb-carousel .slick-prev:not(:hover):not(:active){background-color:transparent}.wp-block-cb-carousel .slick-next:before,.wp-block-cb-carousel .slick-prev:before{color:#000}.wp-block-cb-carousel.alignfull .slick-next,.wp-block-cb-carousel.alignfull .slick-prev{z-index:1}.wp-block-cb-carousel.alignfull .slick-prev{left:25px}.wp-block-cb-carousel.alignfull .slick-next{right:25px}.wp-block-cb-carousel .wp-block-cover,.wp-block-cb-carousel .wp-block-image{margin-bottom:0}.wp-block-cb-carousel .wp-block-cover.aligncenter,.wp-block-cb-carousel .wp-block-image.aligncenter{margin-left:auto!important;margin-right:auto!important}.is-layout-flex .wp-block-cb-carousel{width:100%}
+
+</style>
 <style id="wp-block-separator-inline-css">
 @charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
 </style>
@@ -71,7 +79,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 :root :where(.wp-block-button.is-style-outline--3 .wp-block-button__link){background: transparent none;border-color: currentColor;border-width: 2px;border-style: solid;color: var(--wp--preset--color--primary);padding-top: 0.667em;padding-right: 1.33em;padding-bottom: 0.667em;padding-left: 1.33em;}
 </style>
 <style id="core-block-supports-inline-css">
-.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:15px;}.wp-container-core-navigation-is-layout-1{gap:var(--wp--preset--spacing--large);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-buttons-is-layout-1{justify-content:flex-start;}.wp-container-core-group-is-layout-4 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-4 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--xx-large) var(--wp--preset--spacing--xx-large);}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}.wp-container-core-group-is-layout-8 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-8 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-8 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-9 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-10 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-10 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-10 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-columns-is-layout-3{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-4{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-5{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-14 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-columns-is-layout-6{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-15 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-columns-is-layout-7{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-16 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-columns-is-layout-8{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-9{flex-wrap:nowrap;}.wp-container-core-group-is-layout-20 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-20 > * + *{margin-block-start:0.25rem;margin-block-end:0;}.wp-container-core-group-is-layout-21 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-21 > * + *{margin-block-start:0.25rem;margin-block-end:0;}.wp-container-core-columns-is-layout-10{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-11{flex-wrap:nowrap;}.wp-container-core-group-is-layout-25{flex-wrap:nowrap;gap:0px;justify-content:center;align-items:center;}.wp-container-core-group-is-layout-27 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-28{flex-wrap:nowrap;gap:0px;justify-content:center;align-items:center;}.wp-container-core-group-is-layout-30 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-31{flex-wrap:nowrap;gap:0px;justify-content:center;align-items:center;}.wp-container-core-group-is-layout-33 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-columns-is-layout-12{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-13{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-14{flex-wrap:nowrap;}.wp-container-core-buttons-is-layout-9{justify-content:center;}.wp-container-core-columns-is-layout-15{flex-wrap:nowrap;}.wp-container-core-group-is-layout-41 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-41 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-columns-is-layout-16{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-large) var(--wp--preset--spacing--x-large);}.wp-container-core-social-links-is-layout-1{gap:var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--xx-small);justify-content:flex-start;}.wp-container-core-columns-is-layout-17{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-large) var(--wp--preset--spacing--x-large);}.wp-container-core-group-is-layout-45 > .alignfull{margin-right:calc(var(--wp--preset--spacing--30) * -1);margin-left:calc(var(--wp--preset--spacing--30) * -1);}
+.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:15px;}.wp-container-core-navigation-is-layout-1{gap:var(--wp--preset--spacing--large);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-buttons-is-layout-1{justify-content:flex-start;}.wp-container-core-group-is-layout-4 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-4 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--xx-large) var(--wp--preset--spacing--xx-large);}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}.wp-container-core-group-is-layout-8 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-8 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-8 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-9 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-10 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-10 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-10 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-columns-is-layout-3{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-4{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-5{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-15{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-6{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-17{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-7{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-19{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-8{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-21{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-9{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-23{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-10{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-25{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-11{flex-wrap:nowrap;gap:20px 20px;}.wp-container-core-group-is-layout-27{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-12{flex-wrap:nowrap;}.wp-container-core-group-is-layout-31 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-31 > * + *{margin-block-start:0.25rem;margin-block-end:0;}.wp-container-core-group-is-layout-32 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-32 > * + *{margin-block-start:0.25rem;margin-block-end:0;}.wp-container-core-columns-is-layout-13{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-14{flex-wrap:nowrap;}.wp-container-core-group-is-layout-36{flex-wrap:nowrap;gap:0px;justify-content:center;align-items:center;}.wp-container-core-group-is-layout-38 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-39{flex-wrap:nowrap;gap:0px;justify-content:center;align-items:center;}.wp-container-core-group-is-layout-41 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-group-is-layout-42{flex-wrap:nowrap;gap:0px;justify-content:center;align-items:center;}.wp-container-core-group-is-layout-44 > .alignfull{margin-right:calc(var(--wp--preset--spacing--large) * -1);margin-left:calc(var(--wp--preset--spacing--large) * -1);}.wp-container-core-columns-is-layout-15{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-columns-is-layout-16{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-17{flex-wrap:nowrap;}.wp-container-core-buttons-is-layout-9{justify-content:center;}.wp-container-core-columns-is-layout-18{flex-wrap:nowrap;}.wp-container-core-group-is-layout-52 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-52 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-columns-is-layout-19{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-large) var(--wp--preset--spacing--x-large);}.wp-container-core-social-links-is-layout-1{gap:var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--xx-small);justify-content:flex-start;}.wp-container-core-columns-is-layout-20{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-large) var(--wp--preset--spacing--x-large);}.wp-container-core-group-is-layout-56 > .alignfull{margin-right:calc(var(--wp--preset--spacing--30) * -1);margin-left:calc(var(--wp--preset--spacing--30) * -1);}
 </style>
 <style id="wp-block-template-skip-link-inline-css">
 
@@ -106,6 +114,8 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 		}
 </style>
 <link rel="stylesheet" id="jadro-style-css" href="https://www.revitabiome.com/wp-content/themes/jadro/style.css" media="all">
+<script src="https://www.revitabiome.com/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="https://www.revitabiome.com/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 
 
 <script type="importmap" id="wp-importmap">
@@ -210,7 +220,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
 <figure class="wp-block-image size-full is-resized"><img width="919" height="857" src="https://www.revitabiome.com/wp-content/uploads/2025/01/photo-illustration-aliments.png" alt="" class="wp-image-2006" style="width:704px;height:auto" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/photo-illustration-aliments.png 919w,https://www.revitabiome.com/wp-content/uploads/2025/01/photo-illustration-aliments-300x280.png 300w,https://www.revitabiome.com/wp-content/uploads/2025/01/photo-illustration-aliments-768x716.png 768w" sizes="(max-width: 919px) 100vw, 919px"></figure>
 </div>
 </div>
@@ -223,7 +233,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="padding-bottom:var(--wp--preset--spacing--medium)">
 <div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-<p class="has-primary-color has-text-color has-base-font-size">Innovant : améliorer le microbiome par l’alimentation</p>
+<p class="has-primary-color has-text-color has-base-font-size">Innovant : restaurer l’équilibre du microbiote par l’alimentation</p>
 
 
 
@@ -233,7 +243,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-<p style="margin-bottom:0.65rem">Des résultats rapides grâce à une approche <strong>simple et efficace</strong> adaptée à votre cas, avec une effet direct sur le microbiome et l’inflammation.</p>
+<p style="margin-bottom:0.65rem">Une approche <strong>personnalisée</strong>, <strong>simple et efficace</strong>, pour des <strong>effets rapides</strong> : prendre soin de votre flore intestinale et restaurer son bon fonctionnement pour retrouver toute votre vitalité.</p>
 </div>
 </div>
 </div>
@@ -248,7 +258,11 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p style="margin-top:var(--wp--preset--spacing--small)">Testez c’est gratuit !<br>Si vous constatez une amélioration, vous pourrez continuer votre programme en toute confiance. Sinon, vous n’avez <strong>rien à payer</strong>.</p>
+<p style="margin-top:var(--wp--preset--spacing--small)">Testez c’est gratuit !<br><br>Si vous constatez une amélioration, vous pourrez continuer votre programme en toute confiance. Sinon, vous n’avez <strong>rien à payer</strong>.</p>
+
+
+
+<p></p>
 
 
 
@@ -266,7 +280,15 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p style="margin-top:var(--wp--preset--spacing--small)">Nos menus sont conçus pour vous aider à <strong>mieux digérer et retrouver de l’énergie dès les premiers jours</strong>. Pas besoin d’attendre 1 mois pour commencer à se sentir mieux.</p>
+<p style="margin-top:var(--wp--preset--spacing--small)">Des menus conçus pour vous aider à <strong>mieux digérer et retrouver de l’énergie dès les premiers jours</strong>*. Pas besoin d’attendre 1 mois pour commencer à se sentir mieux.</p>
+
+
+
+<p></p>
+
+
+
+<pre class="wp-block-verse" style="font-size:clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);"><strong><em>* 76% de nos membres ont obtenu des résultats dès la première semaine.</em></strong></pre>
 
 
 
@@ -284,7 +306,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p style="margin-top:var(--wp--preset--spacing--small)">Une seule chose à penser, suivre simplement les instructions. Pas de listes sans fin, d’aliments à peser, ou de compléments hors de prix : juste une approche simple pour un <strong>mieux-être durable</strong>.</p>
+<p style="margin-top:var(--wp--preset--spacing--small)">Une seule chose à penser : suivre simplement les instructions. Pas de listes sans fin, d’aliments à peser, ou de compléments hors de prix…<br><br>Juste une approche simple pour un <strong>mieux-être durable</strong>.</p>
 
 
 
@@ -321,12 +343,13 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-14 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
-<div class="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
-<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img src="https://www.revitabiome.com/wp-content/themes/jadro/assets/images/avatar-1.webp" alt="" class="wp-image-305" style="border-radius:100%"></figure>
+<div class="wp-block-cb-carousel" data-slick='{"slidesToShow":3,"slidesToScroll":1,"speed":300,"arrows":true,"dots":false,"autoplay":true,"autoplaySpeed":3000,"infinite":true,"responsive":[{"breakpoint":769,"settings":{"slidesToShow":1,"slidesToScroll":1}}]}'>
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-15 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
 </div>
 
 
@@ -336,77 +359,182 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p class="has-small-font-size" style="margin-top:4px">Coach de vie</p>
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
 </div>
 </div>
-
-
-
-<p>Thème simple, propre et minimaliste pour l’édition complète de sites.</p>
-
-
-
-<p class="has-primary-color has-text-color" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+</div>
 </div>
 </div>
 
 
 
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-15 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
-<div class="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-6 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
-<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img src="https://www.revitabiome.com/wp-content/themes/jadro/assets/images/avatar-2.webp" alt="" class="wp-image-302" style="border-radius:100%"></figure>
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-6 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
 </div>
 
 
 
 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:75%">
-<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Danial Chen</h2>
+<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Eliza Weber</h2>
 
 
 
-<p class="has-small-font-size" style="margin-top:4px">Orateur public</p>
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
 </div>
 </div>
-
-
-
-<p>Thème rapide comme l’éclair qui se charge en quelques fractions de secondes.</p>
-
-
-
-<p class="has-primary-color has-text-color" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+</div>
 </div>
 </div>
 
 
 
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-16 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
-<div class="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-7 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
-<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img src="https://www.revitabiome.com/wp-content/themes/jadro/assets/images/avatar-3.webp" alt="" class="wp-image-303" style="border-radius:100%"></figure>
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-19 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-7 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
 </div>
 
 
 
 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:75%">
-<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Dina Crossin</h2>
+<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Eliza Weber</h2>
 
 
 
-<p class="has-small-font-size" style="margin-top:4px">Juriste d’entreprise</p>
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
 </div>
 </div>
+</div>
+</div>
+</div>
 
 
 
-<p>Fonctionnalités utiles, bibliothèque de compositions & mises à jour régulières.</p>
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-21 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-8 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
+</div>
 
 
 
-<p class="has-primary-color has-text-color" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:75%">
+<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Eliza Weber</h2>
+
+
+
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-23 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-9 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:75%">
+<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Eliza Weber</h2>
+
+
+
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-25 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-10 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:75%">
+<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Eliza Weber</h2>
+
+
+
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-cb-slide">
+<div class="wp-block-group has-border-color has-quaternary-border-color is-vertical is-layout-flex wp-container-core-group-is-layout-27 wp-block-group-is-layout-flex" style="border-width:1px;border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-11 wp-block-columns-is-layout-flex" style="margin-right:0px;margin-left:0px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%">
+<figure class="wp-block-image size-full has-custom-border is-style-rounded"><img width="736" height="1120" src="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg" alt="" class="wp-image-2045" style="border-radius:100%" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02.jpeg 736w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-197x300.jpeg 197w,https://www.revitabiome.com/wp-content/uploads/2025/01/Flux_Schnell_image_dun_avis_client_sur_mon_site_avec_le_portra_02-673x1024.jpeg 673w" sizes="(max-width: 736px) 100vw, 736px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:75%">
+<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Eliza Weber</h2>
+
+
+
+<p class="has-luminous-vivid-amber-color has-text-color has-medium-font-size" style="margin-top:10px;margin-right:0px;margin-bottom:0px;margin-left:0px">★★★★★</p>
+
+
+
+<p style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.114), 15px);">Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3Thème simple, propre et minimaliste pour l’édition complète de sites. 3</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -417,7 +545,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <div class="wp-block-group alignfull has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="padding-bottom:var(--wp--preset--spacing--medium)">
-<div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-9 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-12 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
 <p class="has-primary-color has-text-color has-base-font-size">10 ans d’errance médicale, de tâtonnement et d’essais pour enfin me sentir mieux</p>
 
@@ -431,26 +559,26 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-10 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<figure class="wp-block-image aligncenter size-full has-custom-border"><img src="https://www.revitabiome.com/wp-content/themes/jadro/assets/images/headshot-1.webp" alt="" class="wp-image-305" style="border-radius:10px"></figure>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-13 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img width="640" height="1536" src="https://www.revitabiome.com/wp-content/uploads/2025/01/8038d30d-cdde-43f7-877b-3ae142eb2815.jpg" alt="" class="wp-image-2061" style="border-radius:10px;aspect-ratio:0.75;object-fit:contain;width:458px;height:auto" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/8038d30d-cdde-43f7-877b-3ae142eb2815.jpg 640w,https://www.revitabiome.com/wp-content/uploads/2025/01/8038d30d-cdde-43f7-877b-3ae142eb2815-125x300.jpg 125w,https://www.revitabiome.com/wp-content/uploads/2025/01/8038d30d-cdde-43f7-877b-3ae142eb2815-427x1024.jpg 427w" sizes="(max-width: 640px) 100vw, 640px"></figure>
 
 
 
-<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-20 wp-block-group-is-layout-constrained">
-<h2 class="wp-block-heading has-text-align-center has-medium-font-size">Eliza Weber</h2>
-
-
-
-<p class="has-text-align-center has-base-font-size">Réalisateur</p>
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-31 wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading has-text-align-center has-medium-font-size">Daniel Soren</h2>
 </div>
 </div>
 
 
 
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-21 wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-32 wp-block-group-is-layout-constrained">
 <p>Pendant 10 ans, j’ai traversé une période très difficile liée à la maladie de Lyme, puis un traitement antibiotique qui m’a causé de nombreux autres problèmes.</p>
+
+
+
+<p></p>
 
 
 
@@ -458,11 +586,27 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
+<p></p>
+
+
+
 <p>Progressivement, mon alimentation est devenue un défi… Avec des inconforts récurrents, de très nombreuses intolérances alimentaires et une énergie en dents de scie, des périodes d’extrême fatigue et de déprime, impactant ma qualité de vie au quotidien.</p>
 
 
 
-<p>Face à cette impasse, j’ai décidé d’explorer en profondeur le lien entre l’alimentation et le bien-être. Après des années de lecture de la littérature scientifique et d’expérimentation sur mon propre cas, j’ai finalement trouvé une approche qui m’a aidé à retrouver un meilleur équilibre et une vitalité renouvelée, pour ne pas dire une rémission.</p>
+<p></p>
+
+
+
+<p>Face à cette impasse, j’ai décidé d’explorer en profondeur le lien entre l’alimentation et le bien-être.</p>
+
+
+
+<p></p>
+
+
+
+<p>Après des années de lecture de la littérature scientifique et d’expérimentation sur mon propre cas, j’ai finalement trouvé une approche qui m’a aidé à retrouver un meilleur équilibre et une vitalité renouvelée, pour ne pas dire une rémission.</p>
 
 
 
@@ -489,7 +633,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="padding-bottom:var(--wp--preset--spacing--medium)">
-<div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-11 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-14 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
 <p class="has-primary-color has-text-color has-base-font-size">Direct</p>
 
@@ -509,14 +653,14 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-12 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-15 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-27 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-38 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
 <h2 class="wp-block-heading has-text-align-center has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Basique</h2>
 
 
 
-<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-25 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-36 wp-block-group-is-layout-flex">
 <p class="has-xx-large-font-size">$49</p>
 
 
@@ -569,12 +713,12 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-30 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-41 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
 <h2 class="wp-block-heading has-text-align-center has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Avancé</h2>
 
 
 
-<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-28 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-39 wp-block-group-is-layout-flex">
 <p class="has-xx-large-font-size">$99</p>
 
 
@@ -627,12 +771,12 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-33 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<div class="wp-block-group has-border-color has-quaternary-border-color has-global-padding is-layout-constrained wp-container-core-group-is-layout-44 wp-block-group-is-layout-constrained" style="border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
 <h2 class="wp-block-heading has-text-align-center has-medium-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Premium</h2>
 
 
 
-<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-31 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-42 wp-block-group-is-layout-flex">
 <p class="has-xx-large-font-size">$499</p>
 
 
@@ -689,7 +833,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <div class="wp-block-group alignfull has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-13 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-16 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
 <p class="has-primary-color has-text-color has-base-font-size">Appel à l’action</p>
 
@@ -721,7 +865,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="padding-bottom:var(--wp--preset--spacing--medium)">
-<div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-14 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns are-vertically-aligned-bottom is-layout-flex wp-container-core-columns-is-layout-17 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
 <p class="has-primary-color has-text-color has-base-font-size">Restez à jour</p>
 
@@ -748,12 +892,12 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-group alignfull has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
-<div class="wp-block-group alignwide is-layout-flow wp-container-core-group-is-layout-41 wp-block-group-is-layout-flow">
+<div class="wp-block-group alignwide is-layout-flow wp-container-core-group-is-layout-52 wp-block-group-is-layout-flow">
 <h2 class="wp-block-heading has-text-align-center has-x-large-font-size">Ajoutez un titre d’appel à action ici</h2>
 
 
 
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-15 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-18 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
 
 
@@ -783,9 +927,9 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <footer class="wp-block-template-part">
 <div class="wp-block-group alignfull site-footer has-white-color has-senary-background-color has-text-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-17 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-20 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-16 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-19 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
 <h2 class="wp-block-heading has-white-color has-text-color has-large-font-size">Entreprise</h2>
 
@@ -868,10 +1012,12 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<div class="wp-block-group alignfull site-footer has-white-color has-senary-background-color has-text-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-45 wp-block-group-is-layout-constrained" style="border-top-color:#ffffff21;border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--30)">
+<div class="wp-block-group alignfull site-footer has-white-color has-senary-background-color has-text-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-56 wp-block-group-is-layout-constrained" style="border-top-color:#ffffff21;border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--30)">
 <p class="has-text-align-center"><a href="https://wpshout.com/jadro/"><br></a>Revitabiome®<span class="sep"> | </span> Tous droits réservés –<strong>©</strong>2025</p>
 </div>
 </footer></div>
+<script src="https://www.revitabiome.com/wp-content/plugins/carousel-block/vendor/slick/slick.min.js" id="carousel-block-slick-script-js"></script>
+<script src="https://www.revitabiome.com/wp-content/plugins/carousel-block/vendor/slick/init.js" id="carousel-block-view-init-js"></script>
 <script id="wp-block-template-skip-link-js-after">
 	( function() {
 		var skipLinkTarget = document.querySelector( 'main' ),
