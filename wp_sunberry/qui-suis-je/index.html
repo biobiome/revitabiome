@@ -37,6 +37,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <style id="wp-block-image-theme-inline-css">
 :root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}
 </style>
+<style id="wp-block-columns-inline-css">
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
 <style id="wp-block-list-inline-css">
 ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
 </style>
@@ -58,9 +61,6 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <style id="wp-block-buttons-inline-css">
 .wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}
 </style>
-<style id="wp-block-columns-inline-css">
-.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
-</style>
 <style id="wp-block-post-content-inline-css">
 .wp-block-post-content{display:flow-root}
 </style>
@@ -72,11 +72,8 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 :root :where(.wp-block-button .wp-block-button__link){border-radius: 5px;line-height: 1;}
 :root :where(.wp-block-pullquote){font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.938), 1.5em);line-height: 1.6;}
 </style>
-<style id="block-style-variation-styles-inline-css">
-:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link){background: transparent none;border-color: currentColor;border-width: 2px;border-style: solid;color: var(--wp--preset--color--primary);padding-top: 0.667em;padding-right: 1.33em;padding-bottom: 0.667em;padding-left: 1.33em;}
-</style>
 <style id="core-block-supports-inline-css">
-.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:15px;}.wp-container-core-navigation-is-layout-1{gap:var(--wp--preset--spacing--large);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;align-items:flex-start;}.wp-container-core-buttons-is-layout-1{justify-content:center;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-group-is-layout-6 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-6 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-9 > .alignfull{margin-right:calc(var(--wp--preset--spacing--30) * -1);margin-left:calc(var(--wp--preset--spacing--30) * -1);}
+.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:15px;}.wp-container-core-navigation-is-layout-1{gap:var(--wp--preset--spacing--large);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-buttons-is-layout-1{justify-content:center;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}.wp-container-core-group-is-layout-6 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-6 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-9 > .alignfull{margin-right:calc(var(--wp--preset--spacing--30) * -1);margin-left:calc(var(--wp--preset--spacing--30) * -1);}
 </style>
 <style id="wp-block-template-skip-link-inline-css">
 
@@ -117,7 +114,36 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<script type="importmap" id="wp-importmap">
+    <script>
+        (function () {
+            // Bloque les moteurs de recherche
+            let meta = document.createElement("meta");
+            meta.name = "robots";
+            meta.content = "noindex, nofollow";
+            document.head.appendChild(meta);
+
+            // Vérifie si la page est archiviste par Internet Archive et redirige
+            fetch(window.location.href, { method: "HEAD", mode: "no-cors" })
+                .then(response => {
+                    if (response.headers.get("X-Archive") === "wayback") {
+                        document.body.innerHTML = "<h1>Accès refusé";
+                    }
+                });
+
+            // Protection par token simple (remplace "MON_TOKEN_SECRET" par le tien)
+            const ALLOWED_TOKEN = "MON_TOKEN_SECRET";
+            const urlParams = new URLSearchParams(window.location.search);
+            const userToken = urlParams.get("token");
+
+            if (userToken !== ALLOWED_TOKEN) {
+                document.body.innerHTML = "<h1>Accès restreint";
+                setTimeout(() => {
+                    window.location.href = "https://google.com"; // Redirige ailleurs
+                }, 3000);
+            }
+        })();
+    </script>
+    <script type="importmap" id="wp-importmap">
 {"imports":{"@wordpress\/interactivity":"https:\/\/www.revitabiome.com\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=06b8f695ef48ab2d9277"}}
 </script>
 <script type="module" src="https://www.revitabiome.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js" id="@wordpress/block-library/navigation/view-js-module"></script>
@@ -160,49 +186,57 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
-<h2 class="wp-block-heading">Mon Histoire Pourrait Être La Vôtre</h2>
+<h2 class="wp-block-heading" id="block-25c549cf-c942-485a-8434-14fef63591de">Mon Histoire Pourrait Être La Vôtre</h2>
 
 
 
-<p>Comment un traitement antibiotique m’a sauvé la vie, mais m’a causé tout un tas de problèmes de santé qui ont fait de ma vie un enfer. Et comment j’ai réussi à retrouver une vie normale et agréable !</p>
+<p id="block-fe6fab91-01e8-4f31-93ed-2a7e8ea5befc">Comment un traitement antibiotique m’a sauvé la vie, mais m’a causé tout un tas de problèmes de santé qui ont fait de ma vie un enfer. Et comment j’ai réussi à retrouver une vie normale et agréable !</p>
 
 
 
-<h3 class="wp-block-heading">Le Début de la Maladie</h3>
+<h3 class="wp-block-heading" id="block-3dbce1dc-a3dd-4338-9158-0b0e9264bdf3">Le Début de la Maladie</h3>
 
 
 
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
 <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex">
-<figure class="wp-block-image alignleft size-medium is-resized"><img fetchpriority="high" decoding="async" width="300" height="300" src="https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-300x300.png" alt="" class="wp-image-2059" style="width:333px;height:auto" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-300x300.png 300w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-1024x1024.png 1024w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-150x150.png 150w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-768x768.png 768w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-1536x1536.png 1536w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x.png 2048w" sizes="(max-width: 300px) 100vw, 300px"></figure>
+<figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-1024x1024.png" alt="" class="wp-image-2059" style="width:341px;height:auto" srcset="https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-1024x1024.png 1024w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-300x300.png 300w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-150x150.png 150w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-768x768.png 768w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x-1536x1536.png 1536w,https://www.revitabiome.com/wp-content/uploads/2025/01/941df3d5-49e0-46f6-a13a-0671d0411e71_upscayl_2x_high-fidelity-4x.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
 <p>Je m’appelle Daniel, j’ai 45 ans et je vais beaucoup mieux maintenant 😉<br><br>J’avais une vie parfaite et une santé idéale, j’étais sportif, bon vivant et joyeux.<br><br>Puis en 2009 j’ai été mordu par une tique infectée et toute ma vie est partie en vrille…<br><br>Pendant 10 ans, j’ai lutté contre la maladie de Lyme sans le savoir.</p>
 </div>
+</div>
+</div>
 
 
 
-<p>J’avais pourtant été traité à l’hôpital par une semaine d’antibiotiques après cette morsure de tique, qui avait déclenché un érythème migrans. On avait donc la certitude que la bactérie (Borrelia) avait pénétrée dans mon corps malgré les tests négatifs.</p>
+<p id="block-f93d7c3c-3652-43b4-a502-7bace55f56de">J’avais pourtant été traité à l’hôpital par une semaine d’antibiotiques après cette morsure de tique, qui avait déclenché un érythème migrans. On avait donc la certitude que la bactérie (Borrelia) avait pénétrée dans mon corps malgré les tests négatifs.</p>
 
 
 
-<p>Mais petit à petit, ma situation s’est dégradée. C’était très sournois : on se sent un peu plus fatigué chaque jour. On dort, mais on se réveille fatigué. On vit dans un état de léthargie constant, on a envie de dormir après chaque repas, on ne peut plus se concentrer, on perd la mémoire, sans parler des douleurs articulaires. Bref, je vous passe la liste complète, c’est horrible. On hésite entre mettre cela sur le compte de l’âge ou d’un autre facteur inconnu.</p>
+<p>On m’avait dit que j’étais guéri après cette semaine d’antibiotiques…</p>
 
 
 
-<p>Après 10 ans de cet enfer, j’étais au bout du rouleau, au point d’envisager le pire… Moi qui avais toujours connu la joie de vivre.</p>
+<p id="block-97bc76ce-f371-4288-9623-6620e6670c4e">Mais petit à petit, ma situation s’est dégradée. C’était très sournois : on se sent un peu plus fatigué chaque jour. On dort, mais on se réveille fatigué. On vit dans un état de léthargie constant, on a envie de dormir après chaque repas, on ne peut plus se concentrer, on perd la mémoire, sans parler des douleurs articulaires. Bref, je vous passe la liste complète, c’est horrible. On hésite entre mettre cela sur le compte de l’âge ou d’un autre facteur inconnu.</p>
 
 
 
-<h3 class="wp-block-heading">L’Errance Médicale</h3>
+<p id="block-efbf0596-0ea4-4afd-aee6-9439934b2282">Après 10 ans de cet enfer, j’étais au bout du rouleau, au point d’envisager le pire… Moi qui avais toujours connu la joie de vivre.</p>
 
 
 
-<p>J’ai alors consulté à nouveau et me suis retrouvé face à un mur :</p>
+<h3 class="wp-block-heading" id="block-a0bd38ac-7796-4728-9ca4-668f40225f7c">L’Errance Médicale</h3>
 
 
 
-<ul class="wp-block-list">
+<p id="block-aa6d9055-ce62-4700-8034-22dfbd73b7c3">J’ai alors consulté à nouveau et me suis retrouvé face à un mur :</p>
+
+
+
+<ul id="block-6d5c1b56-cf96-4713-b102-d2508a3536b2" class="wp-block-list">
 <li>« Vous n’êtes pas malade. »</li>
 
 
@@ -220,55 +254,55 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p>Après de nombreux refus, j’ai enfin trouvé un médecin qui a accepté de me prendre en charge pour Lyme, malgré mes tests sanguins constamment négatifs.</p>
+<p id="block-decbc3c1-520a-4688-8ef7-05f892e85c3d">Après de nombreux refus, j’ai enfin trouvé un médecin qui a accepté de me prendre en charge pour Lyme, malgré mes tests sanguins constamment négatifs.</p>
 
 
 
-<p>Grâce à lui et à un simple traitement antibiotique de longue durée, ma vie a enfin changé.</p>
+<p id="block-67fc21ff-8118-4652-a69a-b4b4b825fa81">Grâce à lui et à un simple traitement antibiotique de longue durée, ma vie a enfin changé.</p>
 
 
 
-<h3 class="wp-block-heading">Une Première Rémission</h3>
+<h3 class="wp-block-heading" id="block-f5ff7974-a0fc-4f9d-8349-998da1cd6df1">Une Première Rémission</h3>
 
 
 
-<p>Je retrouvais mon énergie, mes amis, et l’envie de croquer la vie !</p>
+<p id="block-9da887f3-b3f4-4fcf-ab31-49fe8b236cf2">Je retrouvais mon énergie, mes amis, et l’envie de croquer la vie !</p>
 
 
 
-<p>Mais alors que je retrouvais une vie normale, ma situation s’est de nouveau dégradée. Moins gravement cette fois, mais petit à petit, je devenais intolérant à de plus en plus d’aliments.</p>
+<p id="block-8792be8c-beec-4258-92b1-958e44e8bef7">Mais alors que je retrouvais une vie normale, ma situation s’est de nouveau dégradée. Moins gravement cette fois, mais petit à petit, je devenais intolérant à de plus en plus d’aliments.</p>
 
 
 
-<p>Cela a commencé par l’aubergine, puis l’ail, après le gluten, par la suite bien d’autres…</p>
+<p id="block-a047ac9e-70b8-4057-b657-02f2afa064f4">Cela a commencé par l’aubergine, puis l’ail, après le gluten, par la suite bien d’autres…</p>
 
 
 
-<p>Mon hypothèse ? Les antibiotiques avaient détruit mon microbiote intestinal, rendant mon système immunitaire complètement déréglé.</p>
+<p id="block-a531aa5f-be06-40b5-8ead-855bc52c683b">Mon hypothèse ? Les antibiotiques avaient détruit mon microbiote intestinal, rendant mon système immunitaire complètement déréglé.</p>
 
 
 
-<p>Une analyse de microbiote a confirmé l’hypothèse : mon microbiote était comme inexistant… en quantité et en diversité.</p>
+<p id="block-a6864bd9-77b9-43db-bb33-18a00868a593">Une analyse de microbiote a confirmé l’hypothèse : mon microbiote était comme inexistant… en quantité et en diversité.</p>
 
 
 
-<h3 class="wp-block-heading">Les Symptômes et Conséquences</h3>
+<h3 class="wp-block-heading" id="block-8b0bada8-bc36-45d0-ab92-26cd5f9452b9">Les Symptômes et Conséquences</h3>
 
 
 
-<p>Mon système digestif était dévasté, et je ne pouvais presque plus rien manger sans réaction.</p>
+<p id="block-5acf5e93-b96f-4ecb-b2cf-8d61eb3bc67c">Mon système digestif était dévasté, et je ne pouvais presque plus rien manger sans réaction.</p>
 
 
 
-<p>Il m’est arrivé de ne pouvoir manger que 2 aliments pendant plusieurs jours tellement j’étais sensible à tout ce qui entrait dans mon estomac. C’était le seul moyen de sortir de cet état horrible à vivre.</p>
+<p id="block-81e8d4e3-38da-4509-9104-6c06aa7b7121">Il m’est arrivé de ne pouvoir manger que 2 aliments pendant plusieurs jours tellement j’étais sensible à tout ce qui entrait dans mon estomac. C’était le seul moyen de sortir de cet état horrible à vivre.</p>
 
 
 
-<p>Les symptômes étaient accablants :</p>
+<p id="block-241cff46-d3de-42c4-971a-320a85b78d40">Les symptômes étaient accablants :</p>
 
 
 
-<ul class="wp-block-list">
+<ul id="block-105dd48c-d356-4a8e-b729-902710391d36" class="wp-block-list">
 <li><strong>Une fatigue écrasante</strong>, m’empêchant de vivre normalement : hypersensibilité aux bruits et à la lumière, brouillard mental.</li>
 
 
@@ -286,11 +320,11 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p>Mais aussi des répercussions sociales et émotionnelles :</p>
+<p id="block-96137f1f-e055-4e50-b8df-49d67d922cb3">Mais aussi des répercussions sociales et émotionnelles :</p>
 
 
 
-<ul class="wp-block-list">
+<ul id="block-482113c1-15f9-46a4-8e82-aef6e85ea1b5" class="wp-block-list">
 <li><strong>L’impossibilité de manger normalement</strong>, obligeant à avoir un menu spécial lors des repas de famille ou sorties, entraînant un isolement progressif.</li>
 
 
@@ -304,157 +338,157 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p>Vivre comme enfermé dans son propre corps qui ne fonctionne plus, c’est comme être en enfer…</p>
+<p id="block-e4b855c6-4252-4c04-b078-24e0ea86e03e">Vivre comme enfermé dans son propre corps qui ne fonctionne plus, c’est comme être en enfer…</p>
 
 
 
-<p>L’impression de s’empoisonner en mangeant est une réalité difficile à comprendre sans l’avoir vécue.</p>
+<p id="block-337ca6c3-35ad-4bea-996e-b0d5ac32d96d">L’impression de s’empoisonner en mangeant est une réalité difficile à comprendre sans l’avoir vécue.</p>
 
 
 
-<p>C’est comme être spectateur de la vie, du bonheur des autres, sans pouvoir y participer.</p>
+<p id="block-0671379b-f1aa-48a7-bfb7-0519fe658b00">C’est comme être spectateur de la vie, du bonheur des autres, sans pouvoir y participer.</p>
 
 
 
-<blockquote class="wp-block-quote is-style-default is-layout-flow wp-block-quote-is-layout-flow">
-<p><em>Si j’avais su, j’aurais changé mon alimentation dès le début, plutôt que d’attendre que cela empire. Car plus on attend, plus c’est long à réparer.</em></p>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p id="block-ae908f6f-ae3a-4f56-b34d-c3dd5ed840d3"><em>Si j’avais su, j’aurais changé mon alimentation dès le début, plutôt que d’attendre que cela empire. Car plus on attend, plus c’est long à réparer.</em></p>
 </blockquote>
 
 
 
-<p>Mais on vous dit qu’il ne faut pas jouer avec l’alimentation, que le jeûne est dangereux, qu’il faut se méfier des naturopathes parce qu’ils ne sont pas médecins… alors, on reste comme ça… et tout empire.</p>
+<p id="block-e61f20e2-3329-4cc3-b3a8-49e96c71af55">Mais on vous dit qu’il ne faut pas jouer avec l’alimentation, que le jeûne est dangereux, qu’il faut se méfier des naturopathes parce qu’ils ne sont pas médecins… alors, on reste comme ça… et tout empire.</p>
 
 
 
-<p>On vous dit surtout qu’il n’y a pas de traitement, qu’il faudra vivre avec. Que ce sont des maladies mal comprises, qu’il faut faire plus d’études, et même, je l’ai entendu de mes oreilles : « vous savez, il y a plus grave dans le monde… ». Parfois, on vous rit au nez, car vous parlez de choses que vous avez lu sur internet…</p>
+<p id="block-6473816c-8822-49e3-a229-9db54230b569">On vous dit surtout qu’il n’y a pas de traitement, qu’il faudra vivre avec. Que ce sont des maladies mal comprises, qu’il faut faire plus d’études, et même, je l’ai entendu de mes oreilles : « vous savez, il y a plus grave dans le monde… ». Parfois, on vous rit au nez, car vous parlez de choses que vous avez lu sur internet…</p>
 
 
 
-<p>Bref, ne nous énervons pas… si vous en êtes au premier stade avec quelques intolérances, ne faites pas comme moi. Prenez les mesures qui s’imposent dès que possible et ce sera bien plus facile de remonter la pente.</p>
+<p id="block-48f1ecae-299d-4653-9b4e-f78733e1c5b8">Bref, ne nous énervons pas… si vous en êtes au premier stade avec quelques intolérances, ne faites pas comme moi. Prenez les mesures qui s’imposent dès que possible et ce sera bien plus facile de remonter la pente.</p>
 
 
 
-<h3 class="wp-block-heading">Une Approche Scientifique et Expérimentale</h3>
+<h3 class="wp-block-heading" id="block-6cea4650-8391-4c7e-ba40-cd37f16ab7fd">Une Approche Scientifique et Expérimentale</h3>
 
 
 
-<p>Face à l’incapacité des médecins à m’aider et l’absence de solutions claires, j’avais envie de prendre moi-même les choses en main.</p>
+<p id="block-8aad39a1-1617-4bec-aea9-d0d65eff1198">Face à l’incapacité des médecins à m’aider et l’absence de solutions claires, j’avais envie de prendre moi-même les choses en main.</p>
 
 
 
-<p>Un événement m’a mis dans une grande colère et a fini de me convaincre de créer Revitabiome pour aider les personnes dans la même situation.</p>
+<p id="block-7dfe47f8-2eb4-4131-9678-7d0196322e6a">Un événement m’a mis dans une grande colère et a fini de me convaincre de créer Revitabiome pour aider les personnes dans la même situation.</p>
 
 
 
-<p>Ma compagne de l’époque a un jour été prise d’énormes douleurs au ventre, elle avait tellement mal qu’elle se tordait de douleur sur le canapé et j’ai cru qu’elle allait mourir sous mes yeux.</p>
+<p id="block-082e1012-23b6-4074-8fcf-7f9f078353ca">Ma compagne de l’époque a un jour été prise d’énormes douleurs au ventre, elle avait tellement mal qu’elle se tordait de douleur sur le canapé et j’ai cru qu’elle allait mourir sous mes yeux.</p>
 
 
 
-<p>Je l’ai emmenée en urgence à l’hôpital le plus proche et elle a été « prise en charge ». J’ai passé la nuit à attendre sur le parking dans ma voiture, sans nouvelles.</p>
+<p id="block-106cb0ed-4e78-4d4a-90f3-80b6ddaff8e5">Je l’ai emmenée en urgence à l’hôpital le plus proche et elle a été « prise en charge ». J’ai passé la nuit à attendre sur le parking dans ma voiture, sans nouvelles.</p>
 
 
 
-<p>Le matin, elle allait un peu mieux. Alors la gastroentérologue nous a reçus tous les deux.</p>
+<p id="block-a21adfa2-e228-4c88-9638-82a6d1f96da5">Le matin, elle allait un peu mieux. Alors la gastroentérologue nous a reçus tous les deux.</p>
 
 
 
-<p>Et le verdict est tombé comme un couperet :</p>
+<p id="block-5e0883c6-deab-43c8-b4c1-444bd58fd970">Et le verdict est tombé comme un couperet :</p>
 
 
 
-<p>« Vous êtes atteinte d’une Rectocolite Hémorragique, vous l’aurez à vie, ça ne se guérit pas. »</p>
+<p id="block-119ffcb9-c668-4ea4-b539-5f957bba7144">« Vous êtes atteinte d’une Rectocolite Hémorragique, vous l’aurez à vie, ça ne se guérit pas. »</p>
 
 
 
-<p>« Tout ce qu’on peut faire, c’est vous prescrire des anti-inflammatoires que vous prendrez à vie. »</p>
+<p id="block-1bfc9af3-40dd-4b90-bf03-64bf279decf1">« Tout ce qu’on peut faire, c’est vous prescrire des anti-inflammatoires que vous prendrez à vie. »</p>
 
 
 
-<p>« Et si ça s’aggrave, il faudra opérer pour vous enlever une partie de l’intestin ».</p>
+<p id="block-4384b390-58fe-4a3a-bd93-520c6e7327cf">« Et si ça s’aggrave, il faudra opérer pour vous enlever une partie de l’intestin ».</p>
 
 
 
-<p>Vu mon expérience concernant l’amélioration de mes symptômes par un changement d’alimentation, j’ai osé poser la question qui fâche.</p>
+<p id="block-6067a0ba-7874-4a2c-b48b-e31fb2eda4d5">Vu mon expérience concernant l’amélioration de mes symptômes par un changement d’alimentation, j’ai osé poser la question qui fâche.</p>
 
 
 
-<p>Réponse : « Il ne faut surtout pas changer d’alimentation, on risque de graves problèmes et des carences. »</p>
+<p id="block-41abe2a3-3a20-4777-9e9c-0ce955861e6d">Réponse : « Il ne faut surtout pas changer d’alimentation, on risque de graves problèmes et des carences. »</p>
 
 
 
-<p>Une petite recherche sur internet en rentrant, et j’obtenais des dizaines de témoignages de patient atteints de RCH qui avaient nettement amélioré leurs symptômes avec le régime sans FODMAP. Certains parlaient même de rémission et pouvaient à nouveau manger normalement.</p>
+<p id="block-b61ccec4-503f-4f62-a943-8d111a478b1c">Une petite recherche sur internet en rentrant, et j’obtenais des dizaines de témoignages de patient atteints de RCH qui avaient nettement amélioré leurs symptômes avec le régime sans FODMAP. Certains parlaient même de rémission et pouvaient à nouveau manger normalement.</p>
 
 
 
-<p>Mais surtout, un beau paquet d’études scientifiques publiées dans des revues à comité de lecture ! Études prouvant par A+B qu’on obtient de bons résultats, voire des rémissions ou guérisons de la RCH en changeant d’alimentation, parfois avec l’aide de probiotiques.</p>
+<p id="block-dfd9cdc7-6f1e-4937-9e0c-96ad8c9f6947">Mais surtout, un beau paquet d’études scientifiques publiées dans des revues à comité de lecture ! Études prouvant par A+B qu’on obtient de bons résultats, voire des rémissions ou guérisons de la RCH en changeant d’alimentation, parfois avec l’aide de probiotiques.</p>
 
 
 
-<p>Plus de doute : soit la bouchère (désolé je n’ai pas d’autres mots) n’avait pas internet, soit elle refusait de voir la vérité en face…</p>
+<p id="block-34851cb4-44c5-456e-856a-59878c9c4c3e">Plus de doute : soit la bouchère (désolé je n’ai pas d’autres mots) n’avait pas internet, soit elle refusait de voir la vérité en face…</p>
 
 
 
-<p>Pour quelle raison ? je chercherai du côté de l’égo… Quand on en a bavé pendant 12 ans et qu’on est passé à côté d’une partie de sa vie pour apprendre la médecine, on a du mal à accepter qu’on ne sait pas tout, qu’on peut se tromper et qu’il faut continuer à apprendre.</p>
+<p id="block-c758c12e-b75c-41c4-98f7-c00976bc365a">Pour quelle raison ? je chercherai du côté de l’égo… Quand on en a bavé pendant 12 ans et qu’on est passé à côté d’une partie de sa vie pour apprendre la médecine, on a du mal à accepter qu’on ne sait pas tout, qu’on peut se tromper et qu’il faut continuer à apprendre.</p>
 
 
 
-<p>La coupe était pleine, il fallait que je fasse quelque chose.</p>
+<p id="block-3403df9a-5999-4597-9624-a629cec0f16d">La coupe était pleine, il fallait que je fasse quelque chose.</p>
 
 
 
-<p>D’abord commencer par améliorer ma situation, et voir ensuite si je pourrais l’appliquer pour aider d’autres personnes dans la même situation.</p>
+<p id="block-ecea7e7d-4f71-402e-8b77-5e1fae08ec49">D’abord commencer par améliorer ma situation, et voir ensuite si je pourrais l’appliquer pour aider d’autres personnes dans la même situation.</p>
 
 
 
-<p>Grâce à ma <strong>formation scientifique</strong> je savais ou chercher. J’ai entrepris des recherches approfondies, lu des centaines d’études sur le lien entre alimentation et maladies chroniques.</p>
+<p id="block-898bd226-29fd-4399-bba4-2d8720b977c1">Grâce à ma <strong>formation scientifique</strong> je savais où chercher. J’ai entrepris des recherches approfondies, lu des centaines d’études sur le lien entre alimentation et maladies chroniques.</p>
 
 
 
-<p>Comme beaucoup d’autres malades sur les forums spécialisés, j’ai testé <strong>toutes sortes de régimes</strong> : <strong>FODMAP, Paléo, Jeûne, Jus de légumes, Monodiète, Jeûne intermittent…</strong></p>
+<p id="block-b923ef81-0c67-4fdc-ae95-76bf3f1659f0">Comme beaucoup d’autres malades sur les forums spécialisés, j’ai testé <strong>toutes sortes de régimes</strong> : <strong>FODMAP, Paléo, Jeûne, Jus de légumes, Monodiète, Jeûne intermittent…</strong></p>
 
 
 
-<p>Ils donnaient parfois une amélioration, mais impossible à tenir, car ils étaient trop compliqués à suivre. Il aurait fallu se promener avec une encyclopédie pour vérifier chaque aliment autorisé et en quelle quantité à chaque fois que je devais manger.</p>
+<p id="block-2658f84e-3be8-4aa0-98fc-ed3a7f61ab86">Ils donnaient parfois une amélioration, mais impossible à tenir, car ils étaient trop compliqués à suivre. Il aurait fallu se promener avec une encyclopédie pour vérifier chaque aliment autorisé et en quelle quantité à chaque fois que je devais manger.</p>
 
 
 
-<p>En bref, on ne sait jamais que manger et c’est très facile de faire un écart qui déclenchera une crise dont il faudra deux semaines pour se remettre et retrouver un peu d’énergie pour sortir de chez soi.</p>
+<p id="block-c76c481d-174d-4d35-8b68-9ae37146f359">En bref, on ne sait jamais que manger et c’est très facile de faire un écart qui déclenchera une crise dont il faudra deux semaines pour se remettre et retrouver un peu d’énergie pour sortir de chez soi.</p>
 
 
 
-<p>Un vrai casse-tête, mais j’étais sûr maintenant que l’alimentation jouait un rôle important dans mon mal-être.</p>
+<p id="block-a2a4a3ec-b7da-41df-b7cc-ebbb445f44dc">Un vrai casse-tête, mais j’étais sûr maintenant que l’alimentation jouait un rôle important dans mon mal-être.</p>
 
 
 
-<p>J’ai aussi essayé <strong>de nombreux compléments alimentaires</strong>, espérant une solution miracle : glutamine, vitamines, butyrate, probiotiques divers etc.</p>
+<p id="block-15acee2b-ad63-4216-b30c-228bcf4b4b9d">J’ai aussi essayé <strong>de nombreux compléments alimentaires</strong>, espérant une solution miracle : glutamine, vitamines, butyrate, probiotiques divers etc.</p>
 
 
 
-<p>Mais les résultats étaient souvent insignifiants, et certains déclenchaient même des réactions aiguës conduisant aux urgences ! Urgences où pourtant toutes mes analyses médicales restaient normales alors que j’avais la sensation que j’allais mourir… Sensation d’étouffer, trouble de la vision, vertiges, douleurs… « Vous n’avez rien… ».</p>
+<p id="block-8f9b63ce-5070-45aa-ace5-c91b760c7edd">Mais les résultats étaient souvent insignifiants, et certains déclenchaient même des réactions aiguës conduisant aux urgences ! Urgences où pourtant toutes mes analyses médicales restaient normales alors que j’avais la sensation que j’allais mourir… Sensation d’étouffer, trouble de la vision, vertiges, douleurs… « Vous n’avez rien… ».</p>
 
 
 
-<h3 class="wp-block-heading">Le Tournant : Une Découverte Scientifique</h3>
+<p id="block-220d84ad-edf7-4b0e-8e9a-10e9ae19f428">Le Tournant : Une Découverte Scientifique</p>
 
 
 
-<p>C’est une naturopathe, Sylvia, qui m’a mis sur la bonne piste. Merci à toi Sylvia, je ne te remercierai jamais assez, tu m’as sauvé la vie !</p>
+<p id="block-7658fbfe-78fc-4a38-9849-1df872cd88bc">C’est une naturopathe, Sylvia, qui m’a mis sur la bonne piste. Merci à toi Sylvia, je ne te remercierai jamais assez, tu m’as sauvé la vie !</p>
 
 
 
-<p>Elle m’a proposé des listes d’aliments spécifiques, et j’ai découvert pour la première fois l’impact immense de l’alimentation sur mon bien-être. Une révolution !</p>
+<p id="block-0d6b4d78-b679-4826-8ed4-1ec92fb1068b">Elle m’a proposé des listes d’aliments spécifiques, et j’ai découvert pour la première fois l’impact immense de l’alimentation sur mon bien-être. Une révolution !</p>
 
 
 
-<p>Certains jours, j’arrivais à me sentir presque en forme, c’était comme sortir d’un tunnel et <strong>revivre</strong>.</p>
+<p id="block-3ec1c100-c0cf-4633-828d-507a7705f528">Certains jours, j’arrivais à me sentir presque en forme, c’était comme sortir d’un tunnel et <strong>revivre</strong>.</p>
 
 
 
-<p>Mais ce régime n’était pas parfait :</p>
+<p id="block-411b8d1e-6bb5-4679-9af2-2d4d0ac6c554">Mais ce régime n’était pas parfait :</p>
 
 
 
-<ul class="wp-block-list">
+<ul id="block-e6720fd1-ea40-4676-bb1e-04b49bc04da2" class="wp-block-list">
 <li>Trop compliqué à suivre au quotidien.</li>
 
 
@@ -467,7 +501,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<li>Manque de durabilité dans les résultats.</li>
+<li>Manque de durabilité dans les résultats et très nombreuses rechutes ou crises.</li>
 </ul>
 
 
@@ -540,7 +574,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p>Pire, la transplantation de microbiote, solution simple et peu onéreuse (trop peu onéreuse?) est même interdite en France et dans de nombreux autres pays alors qu’elle a montré des résultats significatifs à travers de nombreuses études.</p>
+<p>Pire, la transplantation de microbiote, solution simple et peu onéreuse (trop peu onéreuse ?) est même interdite en France et dans de nombreux autres pays alors qu’elle a montré des résultats significatifs à travers de nombreuses études.</p>
 
 
 
@@ -600,7 +634,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p>Mais la radicalité est nécessaire pour obtenir des résultats durables. Revitabiome reste toutefois bien plus doux que le jeûne, se gaver de produits chimiques ou la transplantation de microbiote.</p>
+<p>Mais la radicalité est nécessaire pour obtenir des résultats durables. Revitabiome reste toutefois bien plus doux que le jeûne, se gaver de produits chimiques ou la transplantation de microbiote. Et surtout, il donne des résultats rapidement.</p>
 
 
 
@@ -648,7 +682,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p>Mon parcours de santé m’a appris une chose : le système médical fonctionne à l’envers. On paye et ensuite on voit si ça marche ou pas.</p>
+<p>Mon parcours de santé m’a appris une chose : le système médical fonctionne à l’envers. On paye et ensuite, on voit si ça marche ou pas.</p>
 
 
 
@@ -656,8 +690,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p>Alors j’ai fait en sorte de remettre les choses dans l’ordre pour mon programme Revitabiome.</p>
+<p><strong>Alors j’ai fait en sorte de remettre les choses dans l’ordre pour mon programme Revitabiome.</strong></p>
 
 
 
@@ -666,21 +699,42 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<li>Vous propose le programme adapté à votre cas</li>
+<li>Je vous propose le programme adapté à votre cas gratuitement</li>
 
 
 
-<li>Vous le mettez en pratique</li>
-
-
-
-<li>Si vous voyez des améliorations vous achetez le programme de la semaine suivante</li>
+<li>Vous le mettez en pratique pendant 1 semaine</li>
 </ol>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p></p>
 </blockquote>
 
 
 
-<p>Ainsi vous pourrez voir si le programme donne des améliorations dans votre cas sans que ça ne vous coute rien.</p>
+<p>À partir de là, deux cas de figures :</p>
+
+
+
+<p>👍 <strong>Vous vous sentez mieux, le programme fonctionne pour vous !</strong></p>
+
+
+
+<p>Vous validez le paiement de la première semaine pour les résultats obtenus. Vous obtenez alors le programme pour la semaine suivante.</p>
+
+
+
+<p>👎 <strong>Pas d’améliorations…</strong></p>
+
+
+
+<p>Le programme n’est malheureusement pas adapté à votre cas. Vous aurez essayé et cela ne vous a rien couté.</p>
+
+
+
+<p>Je vous conseille de le prolonger l’essai quelques jours en appliquant à nouveau le même programme. Certaines personnes ne répondent pas immédiatement et l’amélioration peut nécessiter un peu plus de temps.</p>
 
 
 
@@ -688,28 +742,24 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<div class="wp-block-group alignfull has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
+<div class="wp-block-group alignfull has-white-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
 <div class="wp-block-group alignwide is-layout-flow wp-container-core-group-is-layout-6 wp-block-group-is-layout-flow">
-<h2 class="wp-block-heading has-text-align-center has-x-large-font-size">Ajoutez un titre d’appel à action ici</h2>
+<h2 class="wp-block-heading has-text-align-center has-x-large-font-size">Revitabiome est-il adapté à votre cas ?</h2>
 
 
 
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
 
 
 
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:720px">
-<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--small)">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--small)">Remplissez le formulaire et après analyse, je vous contacterai pour vous indiquer si le programme est adapté à votre cas et si on peut vous aider.</p>
 
 
 
 <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex" style="margin-top:var(--wp--preset--spacing--medium)">
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Premiers pas →</a></div>
-
-
-
-<div class="wp-block-button is-style-outline is-style-outline--2"><a class="wp-block-button__link wp-element-button" href="#">En savoir plus →</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Je fais le test →</a></div>
 </div>
 </div>
 
@@ -719,6 +769,10 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 </div>
 </div>
 </div>
+
+
+
+<p></p>
 </div></main>
 
 
