@@ -108,20 +108,6 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
     <script>
         (function () {
-            // Bloque les moteurs de recherche
-            let meta = document.createElement("meta");
-            meta.name = "robots";
-            meta.content = "noindex, nofollow";
-            document.head.appendChild(meta);
-
-            // Vérifie si la page est archiviste par Internet Archive et redirige
-            fetch(window.location.href, { method: "HEAD", mode: "no-cors" })
-                .then(response => {
-                    if (response.headers.get("X-Archive") === "wayback") {
-                        document.body.innerHTML = "<h1>Accès refusé";
-                    }
-                });
-
             // Protection par token simple (remplace "MON_TOKEN_SECRET" par le tien)
             const ALLOWED_TOKEN = "MON_TOKEN_SECRET";
             const urlParams = new URLSearchParams(window.location.search);
