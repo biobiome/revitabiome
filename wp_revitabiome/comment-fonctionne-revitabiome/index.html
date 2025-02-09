@@ -174,8 +174,12 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
             const urlParams = new URLSearchParams(window.location.search);
             const userToken = urlParams.get("token");
 
+            // Si le token ne correspond pas, afficher une page d'accès restreint et rediriger
             if (userToken !== ALLOWED_TOKEN) {
-                document.body.innerHTML = "<h1>Accès restreint";
+                // Empêcher l'affichage de la page et afficher un message
+                document.body.innerHTML = "<h1>Accès restreint<p>Vous allez être redirigé.";
+
+                // Rediriger après 3 secondes
                 setTimeout(() => {
                     window.location.href = "https://google.com"; // Redirige ailleurs
                 }, 3000);
