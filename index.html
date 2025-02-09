@@ -106,26 +106,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <script src="https://www.revitabiome.com/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 
 
-    <script>
-        (function () {
-            // Protection par token simple (remplace "MON_TOKEN_SECRET" par le tien)
-            const ALLOWED_TOKEN = "MON_TOKEN_SECRET";
-            const urlParams = new URLSearchParams(window.location.search);
-            const userToken = urlParams.get("token");
-
-            // Si le token ne correspond pas, afficher une page d'accès restreint et rediriger
-            if (userToken !== ALLOWED_TOKEN) {
-                // Empêcher l'affichage de la page et afficher un message
-                document.body.innerHTML = "<h1>Accès restreint<p>Vous allez être redirigé.";
-
-                // Rediriger après 3 secondes
-                setTimeout(() => {
-                    window.location.href = "https://google.com"; // Redirige ailleurs
-                }, 3000);
-            }
-        })();
-    </script>
-    <script type="importmap" id="wp-importmap">
+<script type="importmap" id="wp-importmap">
 {"imports":{"@wordpress\/interactivity":"https:\/\/www.revitabiome.com\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=06b8f695ef48ab2d9277"}}
 </script>
 <script type="module" src="https://www.revitabiome.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js" id="@wordpress/block-library/navigation/view-js-module"></script>
